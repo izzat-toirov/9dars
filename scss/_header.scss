@@ -1,0 +1,40 @@
+
+.header{
+    background: #2c3e50;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        padding: 15px 0;
+        &__logo{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        &__lists{
+            display: flex;
+            text-transform: capitalize;
+            gap: 20px;
+        }
+    }
+    &-actions{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        .search-input {
+            padding: 5px 8px;
+            border-radius: 6px;
+            border: none;
+        }
+        .btn-login {
+            background: #e67e22;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+                background: #d35400;
+            }
+        }
+    }
+}
