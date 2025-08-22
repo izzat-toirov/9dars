@@ -1,0 +1,68 @@
+.post{
+    padding: 40px 0;
+    background: #f8f9fa;
+    &-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    &-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        padding: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+        }
+        &__header {
+            margin-bottom: 12px;
+        }
+        &__title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        &__body {
+            margin-bottom: 16px;
+        }
+        &__text {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+        &__footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #777;
+        }
+        
+        
+    }
+}
+
+
+.more-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.more {
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.more:hover {
+    background: #1abc9c;
+    transform: translateY(-2px);
+}

@@ -79,3 +79,18 @@
         }
     }
 }
+
+@media (max-width:900px) {
+    .users{
+        &-wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media (max-width:600px) {
+    .users{
+        &-wrapper{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

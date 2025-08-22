@@ -66,4 +66,10 @@ function seeMore() {
       totalShown += data.users.length;
     }, closeUserSkeleton);
 }
-  
+
+const siderEl = document.querySelector(".sidebar");
+console.log(siderEl);
+
+function toggleSidebar() {
+    siderEl.classList.toggle("show");
+}

@@ -14,6 +14,32 @@
             display: flex;
             text-transform: capitalize;
             gap: 20px;
+            transition: 0.3s;
+            a{
+                &:hover{
+                    background: #2c3e50;
+                    color: #1abc9c;
+                }
+            }
+        }
+        &__menu{
+            display: none;
+            color: white;
+            z-index: 1100;
+            button{
+                border: none;
+                color: white;
+                background: transparent;
+                i{
+                    font-size: 20px;
+                }
+            }
+        }
+        &__options{
+            display: flex;
+            color: white;
+            gap: 15.38px;
+            position: static;
         }
     }
     &-actions{
@@ -37,4 +63,74 @@
             }
         }
     }
+}
+
+@media (max-width:900px) {
+    .header{
+    .navbar{
+        &__lists{
+            display: none;
+        }
+        &__menu{
+            display: block;
+        }
+        &__options{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: black;
+            border-top: 1px solid #ddd;
+            padding: 14px;
+            justify-content: space-evenly;
+        }
+    }
+}
+}
+@media (max-width:600px) {
+    .header{
+    .navbar{
+        &__logo{
+            font-size: 20px;
+        }
+        &__lists{
+            display: none;
+        }
+        &__menu{
+            display: block;
+        }
+        &__options{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #ddd;
+            padding: 14px;
+            justify-content: space-evenly;
+        }
+    }
+    &-actions{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    .search-input {
+        padding: 3px 6px;
+        border-radius: 6px;
+        border: none;
+        font-size: 14px;
+        width: 150px;
+    }
+    .btn-login {
+        background: #e67e22;
+        border: none;
+        padding: 3px 10px;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        &:hover {
+            background: #d35400;
+        }
+    }
+}
+}
 }

@@ -5,8 +5,8 @@
     font-family: sans-serif;
 }
 .container{
-    width: 1304px;
-    // width: 100%;
+    max-width: 1304px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 12px;
@@ -19,3 +19,45 @@ a{
 li{
     list-style: none;
 }
+.sidebar{
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 200px;
+    height: 50vh;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    background: #2c3e50;
+    z-index: 1000;
+    button{
+        position: absolute;
+        bottom: 460px;
+        top: 20px;
+        left: 0;
+        width: 30px;
+        height: 30px;
+    }
+    .navbar__lists{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 60px; /* tugmadan keyin pastroqqa */
+        font-size: 20px;
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 6px;
+            transition: background 0.3s;
+            &:hover {
+                background: #34495e;
+            }
+        }
+        
+    }
+}
+.sidebar.show {
+    right: 0;
+}
+  
